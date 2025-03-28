@@ -14,12 +14,18 @@ import java.sql.DriverManager
 import org.jetbrains.exposed.sql.*
 
 fun Application.configureDatabases() {
+    val databaseUrl = System.getenv("DATABASE_URL") ?: "jdbc:postgresql://localhost:5432/tutorial"
+    val databaseUser = System.getenv("DB_USER") ?: "postgres"
+    val databasePassword = System.getenv("DB_PASSWORD") ?: "ajay@123"
+
     Database.connect(
-        "jdbc:postgresql://localhost:5432/tutorial",
-        user = "postgres",
-        password = "ajay@123"
+        url = databaseUrl,
+        driver = "org.postgresql.Driver",
+        user = databaseUser,
+        password = databasePassword
     )
 }
+
 /**
  * Makes a connection to a Postgres database.
  *
