@@ -1,6 +1,0 @@
-Database : tutorial_3kwy
-Username: ktor_user
-Password: 2SmKQR149gQ172heAsamIwlbY66PN4Zp
-Internal Database URL: postgresql://ktor_user:2SmKQR149gQ172heAsamIwlbY66PN4Zp@dpg-cvj662ruibrs73ealkvg-a/tutorial_3kwy
-External Database URL: postgresql://ktor_user:2SmKQR149gQ172heAsamIwlbY66PN4Zp@dpg-cvj662ruibrs73ealkvg-a.oregon-postgres.render.com/tutorial_3kwy
-PSQL Command: PGPASSWORD=2SmKQR149gQ172heAsamIwlbY66PN4Zp psql -h dpg-cvj662ruibrs73ealkvg-a.oregon-postgres.render.com -U ktor_user tutorial_3kwy
